@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Poppins:wght@100;400&family=Rubik+Pixels&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to left, #ff9800, #e65100);
+}
+.form{
+    width: 600px;
+    height: 400px;
+    background: url(env.png);
+    background-size: cover;
+    background-position: center;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 150px;
+    border-radius: 50px;
+    box-shadow:0 5px 55px rgba(0,0,0,.2) ;
+}
+.form h3{
+    color: #333;
+    text-transform:uppercase ;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: context-menu;
+}
+.form p{
+    color: #333;
+    margin: 12px 0 30px;
+    cursor: context-menu;
+}
+form{
+    display: flex;
+    justify-content: space-between;
+    width: 73%;
+
+}
+.inputBox{
+    position: relative;
+}
+.inputBox input{
+    outline: none;
+    border: none;
+    width: 290px;
+    height: 60px;
+    border-radius: 8px;
+    padding-left: 15px;
+    font-size: 17px;
+    color: #333;
+    font-weight: 700;
+    background-color: transparent;
+    border: 2px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.inputBox span{
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    transform: translateY(-50%);
+    transition: .3s;
+    color: #888;
+    padding-inline: 5px;
+    
+}
+.inputBox input:focus~span,
+.inputBox input:not(:placeholder-shown)~span
+{
+    transform: translateY(-43px);
+    background-color: #fff;
+    color: #333;
+    font-size: 19px;
+
+}
+.inputBox i{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    margin-left: 10px;
+    font-size: 24px;
+    color: #c2c2c2;
+    transition: .2s;
+}
+.inputBox input:focus ~ i,
+.inputBox input:not(:placeholder-shown)~i{
+    opacity: 0;
+}
+form button{
+    width: 130px;
+    height: 60px;
+    outline: none;
+    border: none;
+    background: linear-gradient(to right, #ff9800, #e65100);
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #fff;
+}
